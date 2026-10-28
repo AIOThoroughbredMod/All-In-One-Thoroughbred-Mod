@@ -1,0 +1,18 @@
+{
+  "aiothoroughbred.lang.code": "zh_tw",
+  "item.aiothoroughbred.thoroughbred_registry_form": "純種馬登記表",
+  "item.aiothoroughbred.racing_crop": "馬鞭",
+  "item.aiothoroughbred.trainer_stopwatch": "練馬師秒錶",
+  "item.aiothoroughbred.grooming_brush": "梳理刷",
+  "item.aiothoroughbred.checkpoint_marker": "賽道檢查點標記杖 ([M] 切換模式)",
+  "item.aiothoroughbred.semaphore_flag": "司閘員信號旗 (對空左鍵 3 次)",
+  "block.aiothoroughbred.starting_gate_frame": "出閘廂白色支架",
+  "block.aiothoroughbred.green_starting_gate_frame": "出閘廂翠綠支架",
+  "block.aiothoroughbred.starting_gate_separator": "出閘廂隔板",
+  "block.aiothoroughbred.starting_gate_number_sign": "閘廂號碼牌",
+  "block.aiothoroughbred.main_starting_gate": "出閘廂前門",
+  "block.aiothoroughbred.rear_starting_gate": "出閘廂後門",
+  "block.aiothoroughbred.starter_console": "練習閘門控制台",
+  "block.aiothoroughbred.racing_console": "賽事控制台",
+  "block.aiothoroughbred.tote_board": "賽果顯示板"
+}

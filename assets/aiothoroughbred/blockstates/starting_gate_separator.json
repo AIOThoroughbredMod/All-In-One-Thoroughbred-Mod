@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aiothoroughbred:block/starting_gate_separator"
+    },
+    "facing=south": {
+      "model": "aiothoroughbred:block/starting_gate_separator",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "aiothoroughbred:block/starting_gate_separator",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "aiothoroughbred:block/starting_gate_separator",
+      "y": 270
+    }
+  }
+}

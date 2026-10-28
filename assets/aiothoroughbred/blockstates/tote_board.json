@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north,theme=0": { "model": "aiothoroughbred:block/tote_board" },
+    "facing=south,theme=0": { "model": "aiothoroughbred:block/tote_board", "y": 180 },
+    "facing=east,theme=0":  { "model": "aiothoroughbred:block/tote_board", "y": 90 },
+    "facing=west,theme=0":  { "model": "aiothoroughbred:block/tote_board", "y": 270 },
+    "facing=north,theme=1": { "model": "aiothoroughbred:block/tote_board" },
+    "facing=south,theme=1": { "model": "aiothoroughbred:block/tote_board", "y": 180 },
+    "facing=east,theme=1":  { "model": "aiothoroughbred:block/tote_board", "y": 90 },
+    "facing=west,theme=1":  { "model": "aiothoroughbred:block/tote_board", "y": 270 },
+    "facing=north,theme=2": { "model": "aiothoroughbred:block/tote_board" },
+    "facing=south,theme=2": { "model": "aiothoroughbred:block/tote_board", "y": 180 },
+    "facing=east,theme=2":  { "model": "aiothoroughbred:block/tote_board", "y": 90 },
+    "facing=west,theme=2":  { "model": "aiothoroughbred:block/tote_board", "y": 270 }
+  }
+}
