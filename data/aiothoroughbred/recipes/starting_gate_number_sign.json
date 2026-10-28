@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "GSG",
+    "III"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_nugget" },
+    "G": { "item": "minecraft:glow_ink_sac" },
+    "S": { "tag": "minecraft:signs" }
+  },
+  "result": { "item": "aiothoroughbred:starting_gate_number_sign", "count": 4 }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IWI",
+    "IBI",
+    "IWI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "W": { "item": "minecraft:white_dye" },
+    "B": { "item": "minecraft:iron_bars" }
+  },
+  "result": { "item": "aiothoroughbred:starting_gate_frame", "count": 8 }
+}

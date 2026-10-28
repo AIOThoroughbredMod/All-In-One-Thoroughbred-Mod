@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "GCG",
+    " R "
+  ],
+  "key": {
+    "B": { "item": "minecraft:stone_button" },
+    "G": { "item": "minecraft:gold_ingot" },
+    "C": { "item": "minecraft:clock" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": { "item": "aiothoroughbred:trainer_stopwatch", "count": 1 }
+}

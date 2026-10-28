@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "L  ",
+    " S ",
+    "  S"
+  ],
+  "key": {
+    "L": { "item": "minecraft:leather" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "aiothoroughbred:racing_crop", "count": 1 }
+}
