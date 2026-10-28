@@ -4,7 +4,7 @@
 
 This mod is entirely vibe-coded by Gemini 4 Argon (with some manual input for tweaking) out of desperation - no mod developers want to do my mod even when I commission them, probably because it's too ambitious and complicated. In addition, I lack coding knowledge and tried, but ultimately could not learn how to code in Java, so I definitely can't make this mod on my own.
 
-However, custom item and block textures are done entirely by hand.
+However, custom item and block textures are done entirely by hand. Most of it, at least. Some jockey silk textures use the AI-placeholders because these were the same as I would make it out, so those were untouched. However, the mod by default uses those AI-generated placeholders, so you are required to get the jockey silks folder from Github and replace the default one with it.
 
 Because the code is made by AI instead of me, the source code will be public, and anyone can modify it to their heart's content. No credit is needed whatsoever, I just want this damn thing to become real!
 
