@@ -37,6 +37,8 @@ Congratulations! You're now a horse owner, and you can start owning thoroughbred
 
 If you want to make subsequent edits to your registration, you can do so by entering the /tb owner command again. Editing requires a fee, however, so make sure you get everything right within the initial registration!
 
+Money isn't just for becoming a horse owner, there are more things to do with it, which will be left for you to discover.
+
 ======================================================================
 
 == I'VE REGISTERED TO BECOME A HORSE OWNER, WHAT NOW? ==
