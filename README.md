@@ -1,6 +1,105 @@
 # All-In-One-Thoroughbred-Mod
 
-== AI DISCLAIMER ==
+An all-in-one thoroughbred mod that introduces the breeding, training, and racing of horses. Tailored to capture realism and adrenaline.
+
+Source Code: https://github.com/AIOThoroughbredMod/All-In-One-Thoroughbred-Mod
+
+## Overview
+
+The ultimate racehorse mod is here, combining breeding, training, and racing into one cohesive system. Breed champion horses with a true pedigree, train them to reach greater heights, and test your efforts on the track. Designed for realism, these are no longer average vanilla horses that can be bossed around without consequence. Every decision matters: one wrong choice could mean another day for your prized horse or the end of its life. Make your decisions wisely.
+
+This mod is available in English, Traditional/Simplified Chinese and Japanese.
+
+\======================================================================
+
+### \== HOW DO I GET STARTED? ==
+
+When creating a new world, you are prompted to choose a World Equine Time Flow, which determines how horse years are calculated in your world:
+
+*   **One-Year Time Flow (Default):** Tailored for servers attempting full realism. Foals grow up and mares go into heat on a real-life time scale.
+*   **Season Time Flow (3/4-Month Cycles):** An equine year is counted per 3 or 4 months, with each new year called a "season." This option is tailored for servers that want faster progression within a reasonable timescale evenly divisible across 12 months.
+*   **Custom Time Flow:** Set up your own custom time flow if default options do not suit your server.
+
+> **WARNING:** Once a time flow is chosen for a world, it cannot be changed. Choose wisely.
+
+\======================================================================
+
+### \== I'VE CHOSEN A TIME FLOW, WHAT NOW? ==
+
+This mod utilizes the _Lightman's Currency_ mod as a dependency for its economy system. Without funds, you cannot become a registered horse owner, though you can still tame wild vanilla horses to prepare for what lies ahead.
+
+1.  **Earn Funds:** Copper coins count as $1. Earn at least $10,000.
+    
+2.  **Deposit Currency:** Use `/tb cash in` to deposit money into your bank once you reach $10,000. Use `/tb cash out` to convert bank balance back into physical coins.
+    
+3.  **Register Ownership:** Enter the `/tb owner` command to open the registration form GUI. Complete the form and pay the $10,000 registration fee.
+    
+4.  **Subsequent Edits:** Registration details can be modified by entering `/tb owner` again, though editing incurs an additional fee. Ensure all details are correct during initial registration.
+    
+Currency has additional uses beyond registration, left for players to discover.
+
+\======================================================================
+
+### \== I'VE REGISTERED TO BECOME A HORSE OWNER, WHAT NOW? ==
+
+1.  Craft a **Thoroughbred Registry Form** and use it on a tamed vanilla horse (or go out and tame one).
+2.  After using the registry form, a registration GUI opens, requiring you to name your horse and select its gender.
+3.  Choose a naming language rule from English, Chinese, or Japanese, which follow the naming regulations of the British Horseracing Authority, Hong Kong Jockey Club, and Japan Racing Association, respectively.
+4.  Once named and gendered, the horse becomes a registered thoroughbred. While it appears identical to a vanilla horse outwardly, its core mechanics and AI are entirely overhauled. Mount it with a saddle to experience the new handling.
+5.  Completing registration opens the **Thoroughbred Stat Card GUI**, displaying full equine information. Review this information at any time by sneaking and right-clicking the horse.
+
+\======================================================================
+
+### \== I'VE REGISTERED THE HORSE AS A THOROUGHBRED, WHAT NOW? ==
+
+From horse training and racing to daily care and breeding, the path forward is yours to navigate. Thoroughbred controls differ significantly from vanilla horses.
+
+Press **G** to enable **Training Mode**, allowing you to train five core statistics:
+
+*   **Speed:** Determines how fast a horse can run.
+*   **Stamina:** Acts as the horse's fuel, determining how long it can sustain running.
+*   **Power:** Affects acceleration and the ability to climb uphill slopes. It enables powerful strides that serve as a brief speed boost.
+*   **Guts:** When stamina depletes, the horse taps into its guts reserves. This prevents further acceleration and dictates how long the horse can maintain its current speed. Higher guts reduce the rate of speed loss once both stamina and guts are exhausted.
+*   **Wits:** Affects breathing rhythm and reaction to the **Racing Crop**, an item signaling the horse to put forth maximum effort. Low wits can cause ragged breathing, unnecessary stamina drain, and require more urges from the crop to reach top speed.
+
+\======================================================================
+
+### \== WHAT ARE THESE BARS WHEN I RIDE ON MY HORSE? ==
+
+*   **SPD (Speed):** Displays current running speed. The red bar indicates the comfortable running zone, acting as a soft cap until the Racing Crop is used. The grey bar represents the absolute speed hard cap.
+*   **STM (Stamina):** Represents stamina reserves, which begin depleting once speed exceeds 35 km/h. When the horse's breath is ragged, the bar flashes between red and blue, causing accelerated stamina drain. Once fully depleted, the GUTS bar replaces it.
+*   **GUTS:** Appears after stamina drops to zero. It halts further acceleration but keeps the current speed stable until it ultimately depletes.
+*   **Distance Aptitude (Displayed as numbers above the SPD bar):** The distance aptitude mechanics utilize a four-zone structure:
+    *   **Zone 0 (Pre-Minimum Warm-Up):** Handles initial acceleration before hitting the minimum distance required, which actually is defined by the horse's shown minimum minus 500m.
+    *   **Zone 1 (Optimal Range):** The ideal distance window for the horse.
+    *   **Zone 2 (Buffer Zone):** A stamina-taxing buffer outside the ideal range, lasting for 200m.
+    *   **Zone 3 (Over-Distance Wall):** A severe over-distance threshold causing accelerated drain after passing the buffer zone. Not only does stamina deplete tremendously fast, the horse's max speed cap will drop (it's temporary so don't worry about this ruining a horse!).
+*   **HNG & THR (Hunger and Hydration):** If a horse is starving or dehydrated, training gains are halted. Feed horses horse food and water. Horses automatically consume hay bales placed on the floor and water inside cauldrons. Feeding an enchanted golden apple pauses hunger and thirst progression for two real-life days.
+*   **FTG (Fatigue):** A critical meter to monitor. Reaching 50% fatigue increases susceptibility to illness and injury. Surpassing 80% enters the danger zone, inflicting the **Unstable Legs** ailment, which spikes injury risks and can cause catastrophic consequences. Fatigue is reduced by brushing with the **Grooming Brush** or allowing the horse to rest. Feeding an enchanted golden apple reduces fatigue and heavily suppresses its progression for two real-life days, though it does not outright stop it.
+*   **BND (Bond):** Caring for your horse increases bond and mood, granting training bonuses.
+*   **MOOD:** Affects training efficiency and race performance. Keep your horse happy.
+
+\======================================================================
+
+### \== MY HORSE GOT SICK/INJURED, WHAT NOW? ==
+
+Oh no! It seems your horse is in a prolonged state of high fatigue! Prolonged high fatigue can lead to illness or injury, so make sure to keep an eye on it!
+
+*   **Veterinary Treatment:** Type `/tb vet` to charge fees and treat your horse as long as funds are sufficient. The vet cannot instantly cure injuries, but increases recovery rates and boosts full recovery odds. Injuries risk permanently reducing or removing racing ability, which veterinary care mitigates.
+*   **Catastrophic Fractures:** If a horse suffers a catastrophic fracture resulting in a **poor prognosis**, it cannot be saved, even by a vet. It lives in excruciating pain on borrowed time. Each day carries a 50/50 chance of passing away from the pain, accompanied by a spine-chilling wither sound, which indicates the horse dying in resentment. Euthanizing the horse via `/tb euthanize` ends its suffering with dignity.
+*   **Miracle Recovery:** There is a 1% chance of a miracle recovery. Feeding an enchanted golden apple lessens pain and prevents death checks for the day. Consistent feeding may eventually trigger a recovery, though racing ability will likely be lost due to severe leg damage. Normal golden apples achieve a similar effect with diminishing returns, meaning each successive apple removes less death chance from daily rolls. If the horse ultimately passes, it dies with less pain and without resentment.
+ 
+\======================================================================
+
+### \== COULD MY HORSE LIVE FOREVER? ==
+ 
+All horses eventually succumb to old age. The risk of entering **Death's Door** begins at **25 Equine Years**, with mortality chances increasing each subsequent year.
+
+When a horse reaches Death's Door, it lies down similarly to a horse with a poor prognosis, but without physical pain. High bond levels cause the horse to emit heart particles as a final farewell. A daily mortality check rolls a 50/50 chance of survival. Aside from admin intervention, passing away from old age is inevitable, __**after which the horse departs peacefully.**__
+
+\======================================================================
+
+### \== AI DISCLAIMER ==
 
 This mod is entirely vibe-coded by Gemini 4 Argon (with some manual input for tweaking) out of desperation - no mod developers want to do my mod even when I commission them, probably because it's too ambitious and complicated. In addition, I lack coding knowledge and tried, but ultimately could not learn how to code in Java, so I definitely can't make this mod on my own.
 
@@ -8,117 +107,4 @@ However, custom item and block textures are done entirely by hand.
 
 Because the code is made by AI instead of me, the source code will be public, and anyone can modify it to their heart's content. No credit is needed whatsoever, I just want this damn thing to become real!
 
-======================================================================
-
-The ultimate racehorse mod is here, with breeding, training and racing all captured in one! Breed champion horses with a champion's pedigree, train your horse to rise greater heights and apply all those efforts in racing! However, as it's an attempt to capture realism, these are no longer your average vanilla Minecraft horses where you can just boss them around with no consequences. One choice might be another day for your prized horse or the end of its life, make decisions wisely!
-
-This mod is available in English, Chinese (Traditional and Simpified) and Japanese.
-
-======================================================================
-
-== HOW DO I GET STARTED? ==
-
-When you create a new world, you will be prompted to choose a World Equine Time Flow - determining how horse years are calculated in your world.
-The default is the one-year time flow - tailored for servers attempting to capture full realism. Foals grow up and mares go into heat like the real-life time scale.
-For 3/4-month cycles, an equine year is counted per 3/4 months, and every new equine year is called a "season" - tailored for servers that want things go quick, but within a reasonable timescale that can be evenly divided in 12 months.
-None of these above attract you? You can set your own custom time flow too!
-
-WARNING: Once you choose a time flow for your world, you can no longer switch to another one, so choose wisely!
-
-======================================================================
-
-== I'VE CHOSEN A TIME FLOW, WHAT NOW? ==
-
-This mod utilizes the Lightman's Currency mod as one of its dependencies - money!
-Unfortunately, without money, you cannot become a horse owner yet! But you can still tame wild vanilla horses to prepare for what's coming up.
-In this mod, copper coins are counted as $1, so let's earn at least $10000 first. Once you have earned $10000 worth of money, you can type in /tb cash in to deposit money into your bank, and this is where you can prepare to become a horse owner. Typing /tb cash out takes out your money and reverts them back into coins.
-Enter the /tb owner command, a registration form GUI will pop up. Once you filled it out, you have to pay $10000 to finish your registration. 
-Congratulations! You're now a horse owner, and you can start owning thoroughbreds!
-
-If you want to make subsequent edits to your registration, you can do so by entering the /tb owner command again. Editing requires a fee, however, so make sure you get everything right within the initial registration!
-
-Money isn't just for becoming a horse owner, there are more things to do with it, which will be left for you to discover.
-
-======================================================================
-
-== I'VE REGISTERED TO BECOME A HORSE OWNER, WHAT NOW? ==
-
-Now that you're a horse owner, first thing to do is to craft a Thoroughbred Registry Form, and then use it on a tamed vanilla horse. If you don't have any tamed vanilla horses, go out and find one!
-After using the registry form, a registration GUI will pop up - requiring you to name your horse and choose its gender. 
-You can choose a specific language rule our of three to name your horses - English, Chinese and Japanese, three of them following the naming rules of the British Horseracing Authority, Hong Kong Jockey Club, and Japan Racing Association, respectively.
-Once you have decided a name and the horse's gender, it will become a registered thoroughbred! It looks no different than a vanilla horse outwards, but within its core, it has underwent a complete transformation and will no longer follow the AI of vanilla horses - something that can be seen by riding it (remember to saddle it first!).
-
-Once you finished registering the horse, a Thoroughbred Stat Card GUI will pop up and show you the horse's full information. If you want to read it again, you can sneak and right click the horse.
-
-======================================================================
-
-== I'VE REGISTERED THE HORSE AS A THOROUGHBRED, WHAT NOW? ==
-
-Now you're ready to figure out everything else on your own! From horse training, racing, caring and breeding, there are many possibilities.
-Test out how controls work for thoroughbreds - it no longer follows vanilla horse controls.
-Pressing G enables Training Mode, where you can start training the five core stats - Speed, Stamina, Power, Guts and Wits.
-
-
-Speed - How fast a horse can run.
-
-
-Stamina - A horse's "fuel", how long a horse can run.
-
-
-Power - Affects a horse's acceleration and ability to climb uphill slopes. It also enables a horse to perform powerful strides that serve as a brief speed boost.
-
-
-Guts - Once stamina is depleted, a horse will tap into its guts reserves, which stops further acceleration, and defines the time it can stay at its current speed. Depending on your amount of guts, it also defines the rate of speed loss when both stamina and guts are depleted.
-
-
-Wits - Affects a horse's breathing rhythm and reaction to the Racing Crop - an item that signals a horse to put out max effort. A horse with low wits can suffer from a ragged breath, which causes unnecessary stamina drain, and requires more urges from the Racing Crop to reach its top speed.
-
-======================================================================
-
-== WHAT ARE THESE BARS WHEN I RIDE ON MY HORSE? ==
-
-SPD - The bar that shows your horse's current running speed. The red bar indicates the horse's comfortable running zone, and will be a soft cap until the Racing Crop is used. The grey bar is the horse's speed hard cap, the maximum speed a horse can run at.
-
-
-STM - The horse's stamina reserves, which starts depleting the moment your horse's speed exceeds 35 km/h. When your horse's breath is ragging, it sparks between red and blue and causes unnecessary stamina drain. After it completely depletes, the GUTS bar will replace it for as long as it can.
-
-
-GUTS - The horse's guts reserves, which appears after stamina drops to zero. It stops further acceleration, but keeps your current speed stable until it ultimately depletes too.
-
-
-Distance Aptitude Numbers (X m/XXXX m- XXXX m): The horse's minimum and maximum distance aptitude. When your horse is past its maximum distance aptitude limit, the stamina bar slowly sparks for a distance of 50m with an accelerated depletion, and then sparks rapidly, which causes it to deplete very rapidly. Minimum distance aptitude affects when a horse can start being urged by the Racing Crop - there will be a "ghost" minimum when it can be urged (minimum minus 500), so a horse can run at maximum effort in races that it barely matches its aptitude to.
-
-
-HNG and THR - The horse's hunger and thirst. If a horse is starving or dehydrated, it will not gain anything in training! Feed it horse food and water! A horse will also automatically eat hay bales placed on the floor and water inside cauldrons. Feeding a horse an enchanted golden apple will stop hunger and thirst from progressing for two real-life days.
-
-
-FTG - The horse'a fatigue meter, and it is VERY IMPORTANT for you to keep track of - when a horse reaches 50% fatigue, it starts falling sick easily and starts having risks of injury. Passing 80% will be the dangerous zone that gives you the Unstable Legs ailment - spiking chances of injuries and possibly causing catastrophic consequences! It can be reduced by brushing your horse with the Grooming Brush or letting it rest. Feeding your horse an enchanted golden apple will reduce fatigue and heavily suppress, but not outright stop it, from progressing for two real-life days. 
-
-
-BND - The horse's bond meter. Caring for your horse increases its bond and mood, which gives you bonuses in training!
-
-
-MOOD - The horse's mood. It affects a horse's training and its performance in races, so keep it happy!
-
-======================================================================
-
-== MY HORSE GOT SICK/INJURED, WHAT NOW? ==
-
-Oh no! It seems you have caused it to be in a state of fatigue for so long, bad things happened to it!
-When this happens, you can type in the /tb vet command - it will immediately charge you to cure/treat your horse as long as you have sufficient funds. In terms of injuries, the vet cannot outright cure it, but increases recovery rate by a half and boosts full recovery odds. Injuries have a chance to cause a horse to reduce or permanently lose its racing ability, and the vet lessens the chance of this happening.
-
-If your horse suffered from a catastrophic fracture, meaning that a poor prognosis is the verdict, there is nothing that could save it, not even the vet. It will live on in excruciating pain on borrowed time. Each day will have a practical 50/50 chance it dies from the excruciating pain, leaving this world in resentment, which is indicated by a spine-chilling wither's sound... feel this guilt heavily in your heart. Euthanizing it with the /tb euthanize command will send it off with dignity.
-
-However, nothing is lost yet! There is a 1% chance that a miracle will happen! Feeding an enchanted golden apple will lessen its pain and stop it from stepping into death's door for the next day. Constantly feeding it enchanted golden apples will mean some day, a miracle happens and it will recover - though it's very likely it completely loses its racing ability, as a catastrophic fracture would very likely ruin its legs. Surviving a catastrophic fracture is already a miracle, wanting it to restore racing ability is a miracle on top of miracles.
-
-A normal golden apple also does this trick, but with a catch - it operates on diminishing returns. Meaning that the more golden apples you used, the less death chance it removes from the next day's death roll. If your horse unfortunately still dies due to this, do not blame yourself, it dies with less pain than expected and will not leave this world in resentment.
-
-======================================================================
-
-== COULD MY HORSE LIVE FOREVER? ==
-
-Unfortunately, everything must come to an end - horses will die of old age. The age range where they will start moving into Death's Door starts at 25 Equine Years. And for each new year, its death chance increases.
-
-When it steps into Death's Door, it will lie down, just like a horse that suffered from a poor prognosis, but is not in excruciating pain. If your bond with your horse is high, it will emit lots of heart particles as a last goodbye to its owner. Every Minecraft day, a death dice rolls - 50/50 chance of living or dying. Nothing other than admin intervention can save your horse.
-
-When death finally comes, it will pass away, peacefully.
+\======================================================================
