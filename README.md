@@ -30,7 +30,7 @@ This mod utilizes the _Lightman's Currency_ mod as a dependency for its economy 
 
 1.  **Earn Funds:** Copper coins count as $1. Earn at least $10,000.
     
-2.  **Deposit Currency:** Use `/tb cash in` to deposit money into your bank once you reach $10,000. Use `/tb cash out` to convert bank balance back into physical coins.
+2.  **Deposit Currency:** Use `/tb cashin` to deposit money into your bank once you reach $10,000. Use `/tb cashout` to convert bank balance back into physical coins.
     
 3.  **Register Ownership:** Enter the `/tb owner` command to open the registration form GUI. Complete the form and pay the $10,000 registration fee.
     
