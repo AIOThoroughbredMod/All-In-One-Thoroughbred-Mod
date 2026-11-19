@@ -101,7 +101,7 @@ When a horse reaches Death's Door, it lies down similarly to a horse with a poor
 
 ### \== AI DISCLAIMER ==
 
-This mod is entirely vibe-coded by Gemini 4 Argon (with some manual input for tweaking) out of desperation - no mod developers want to do my mod even when I commission them, probably because it's too ambitious and complicated. In addition, I lack coding knowledge and tried, but ultimately could not learn how to code in Java, so I definitely can't make this mod on my own.
+This mod is entirely vibe-coded by Gemini 4 Argon (as of November 19th, Gemini 4 Neon) out of desperation - no mod developers want to do my mod even when I commission them, probably because it's too ambitious and complicated. In addition, I lack coding knowledge and tried, but ultimately could not learn how to code in Java, so I definitely can't make this mod on my own.
 
 However, custom item and block textures are done entirely by hand.
 
