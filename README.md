@@ -78,6 +78,7 @@ Press **G** to enable **Training Mode**, allowing you to train five core statist
 *   **FTG (Fatigue):** A critical meter to monitor. Reaching 50% fatigue increases susceptibility to illness and injury. Surpassing 80% enters the danger zone, inflicting the **Unstable Legs** ailment, which spikes injury risks and can cause catastrophic consequences. Fatigue is reduced by brushing with the **Grooming Brush** or allowing the horse to rest. Feeding an enchanted golden apple reduces fatigue and heavily suppresses its progression for two real-life days, though it does not outright stop it.
 *   **BND (Bond):** Caring for your horse increases bond and mood, granting training bonuses.
 *   **MOOD:** Affects training efficiency and race performance. Keep your horse happy.
+*   **KICK RESERVE:** A horse's anaerobic kick reserve during an active race. Running a horse at their comfortable strategy will replenish the gauge, while running out of pace depletes it. This affects how well your horse does on the final 600m of a race.
 
 \======================================================================
 
