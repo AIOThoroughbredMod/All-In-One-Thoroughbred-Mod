@@ -1,4 +1,4 @@
-# All-In-One-Thoroughbred-Mod
+# All-In-One-Thoroughbred-Raising
 
 An all-in-one thoroughbred mod that introduces the breeding, training, and racing of horses. Tailored to capture realism and adrenaline.
 
